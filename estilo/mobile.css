@@ -83,12 +83,12 @@
     .menu-1 #pesquisa {
         position: absolute;
         top: 8%;
-        right: 10%;
+        right: -10%;
         left: 12%;
         border: 2px solid gray;
         padding: 5px;
         border-radius: 10px;
-        width: 350px;
+        width: 300px;
         height: 2rem;
     }
     
