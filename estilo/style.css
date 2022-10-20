@@ -17,6 +17,7 @@
 
 #header {
     background: var(--cor-header);
+    width: 100%;
 }
 
 #header .menu-1 {
@@ -50,17 +51,28 @@
 
 /* Menu-2 */
 
+#menu-2 {
+    background: var(--cor-header);
+    display: block;
+}
+
 #menu {
     display: flex;
-    list-style: none;
-    gap: 0.5rem;
-  }
-  
-  #menu {
-    text-align: center;
-    display: flex;
-    padding: 0.5rem;
-  }
+    justify-content: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+#menu li a {
+    color: white;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    font-family: sans-serif;
+}
+
+.menu li a:hover {
+    color: rgba(128, 128, 128, 0.382);
+}
   
   #btn-mobile {
     display: none;
