@@ -28,16 +28,24 @@ section#main {
     justify-items: left;
 }
 
-.sobre-produto h2 {
-    width: 500px;
+.h2 {
+    display: flex;
     padding: 10px;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     color: gray;
-    border-bottom: 2px solid white;
+}
+
+.h2 .linha {
+    margin: 0px 20px;
+    margin-top: 22px;
+    height: 2px;
+    background: white;
+    width: 350px;
 }
 
 .sobre-produto p {
     margin-top: 10px;
+    margin-left: 20px;
     color: white;
     font-family: "Roboto" sans-serif;
     font-size: 1.5rem;
@@ -45,7 +53,7 @@ section#main {
 }
 
 .sobre-produto ul {
-    margin: 10px;
+    margin: 10px 30px;
     color: white;
     font-size: 1.4rem;
 }
@@ -63,15 +71,14 @@ section#main {
 
 .bloco-1 .btn-comprar {
     position: absolute;
-    top: 60%;
-    left: 55%;
+    top: 70%;
+    left: 65%;
     margin: 20px 20px;
 }
 
 .btn-comprar a {
     font-size: 1.5rem;
     color: white;
-    background: #d3ad7f;
 }
 
 .btn-comprar a > button {
@@ -79,6 +86,13 @@ section#main {
     background: #d3ad7f;
     padding: 10px;
     border-radius: 2px;
+}
+
+.btn-comprar a > button:hover {
+    color: white;
+    padding: 16px;
+    font-size: 1.5rem;
+    opacity: 0.7;
 }
 
 .container .img {
@@ -103,49 +117,25 @@ section#main {
     }
 
     .container {
-        gap: 20px;
-        padding: 20px;
+        margin-top: 100px;
         background: #13131a;
+        padding: 10px 10px;
+    }
+
+    .bloco-1 {
+        gap: 10px;
         display: flex;
         flex-direction: column;
     }
 
-    .bloco-2 h2 {
-        font-size: 2.5rem;
-        border-bottom: 3px solid white;
-        width: 200px;
-        margin: 10px 10px;
-        color: white;
+    .bloco-1 .btn-comprar {
+        position: absolute;
+        top: 141%;
+        left: 15%;
+        margin: 20px 20px;
     }
 
-    .Especificação h2 {
-        font-size: 2.5rem;
-        border-bottom: 3px solid white;
-        width: 200px;
-        margin: 10px 10px;
-        color: white;
-    }
 
-    .bloco-2 article {
-        justify-items: left;
-        margin-right: 3rem;
-        width: 340px;
-        color: white;
-        padding: 10px;
-        margin-top: 2rem;
-        font-size: 1.5rem;
-        font-family: sans-serif;
-    }
-
-    .abacate {
-        margin-top: 20px;
-        justify-items: left;
-        margin-right: 3rem;
-        width: 340px;
-        color: white;
-        font-size: 1.5rem;
-        font-family: sans-serif;
-    }
 
 }
 
