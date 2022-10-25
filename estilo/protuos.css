@@ -17,95 +17,74 @@
     transition: .2s linear;
 }
 
-
 section#main {
-    max-width: 1200px;
+    max-width: 1300px;
+    margin: auto;
     padding: 10px;
 }
 
-.container {
-    padding: 20px;
-    background: #13131a;
-    display: flex;
-}
-
-.produto {
-    flex:1 1 45rem;
-    height: 55rem;
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-}
-
-.bloco-2 {
-    border: 1px solid gray;
-    margin: 0px 10px;
-}
-
-.bloco-2 h2 {
-    font-size: 2.5rem;
-    border-bottom: 3px solid white;
-    width: 200px;
-    margin: 10px 22px;
-    color: white;
-}
-
-.bloco-2 article {
-    justify-items: left;
-    margin-right: 3rem;
-    width: 800px;
-    color: white;
-    padding: 10px;
-    margin-top: 2rem;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-}
-
-.abacate {
-    margin-top: 20px;
-    justify-items: left;
-    margin-right: 3rem;
-    width: 800px;
-    color: white;
-    font-size: 1.5rem;
-    font-family: sans-serif;
-}
-
-.Especificação {
-    color: gray;
+.sobre-produto {
     margin-top: 10px;
-    margin-left: 3rem;
     justify-items: left;
+}
+
+.sobre-produto h2 {
+    width: 500px;
+    padding: 10px;
+    font-size: 2.5rem;
+    color: gray;
+    border-bottom: 2px solid white;
+}
+
+.sobre-produto p {
+    margin-top: 10px;
+    color: white;
+    font-family: "Roboto" sans-serif;
+    font-size: 1.5rem;
+    margin-right: 20px;
+}
+
+.sobre-produto ul {
+    margin: 10px;
+    color: white;
     font-size: 1.4rem;
 }
 
-.butoes {
-    margin-left: 20px;
-    margin-top: 10px;
+.container {
+    margin-top: 100px;
+    background: #13131a;
     padding: 20px;
 }
 
-.butoes a {
-    padding: 20px;
-    background: #d3ad7f;
-    border-radius: 5px;
+.bloco-1 {
+    gap: 10px;
+    display: flex;
+}
+
+.bloco-1 .btn-comprar {
+    position: absolute;
+    top: 60%;
+    left: 55%;
+    margin: 20px 20px;
+}
+
+.btn-comprar a {
+    font-size: 1.5rem;
     color: white;
-    font-size: 1.6rem;
-}
-
-.butoes button {
-    width: 200px;
-    color: black;
     background: #d3ad7f;
-    font-size: 1.2rem;
 }
 
-#linha {
-    padding: 1px;
-    background: white;
+.btn-comprar a > button {
+    width: 300px;
+    background: #d3ad7f;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.container .img {
+    border-radius: 5px;
     width: 400px;
-    margin-top: 10px;
-    margin-left: 1.2rem;
+    height: 400px;
 }
 
 /* media queries  */
