@@ -194,8 +194,12 @@ iframe {
         background: #fff;
     }
 
+    .texto p {
+        font-size: 1.8rem;
+    }
+
     .texto ul li {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .texto .butons {
