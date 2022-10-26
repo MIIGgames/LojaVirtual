@@ -24,7 +24,6 @@ section#main {
 }
 
 .container {
-    z-index: 10;
     display: flex;
     gap: 5rem;
     padding: 10px;
@@ -33,6 +32,7 @@ section#main {
 }
 
 .texto {
+    margin-top: 20px;
     font-size: 1.5rem;
     color: white;
 }
@@ -48,8 +48,15 @@ section#main {
 }
 
 .texto .butons {
+    gap: 10px;
+    display: flex;
     margin: 5px 10px;
     padding: 14px;
+}
+
+.butons p {
+    font-size: 2.5rem;
+    margin-top: 20px;
 }
 
 
@@ -124,101 +131,12 @@ section#main {
         img
 ================*/
 
-.slides {
-    width: 400%;
-    height: 400px;
-    display: flex;
-}
-
-.slides input {
-    display: none;
-}
-
-.slide{
-    width: 25%;
-    position: relative;
-}
-
-.slide img {
-    width: 400px;
-    height: 400px;
-}
-
-.manual-navigation {
-    position: absolute;
-    width: 800px;
-    margin-top: -40px;
-    display: flex;
-    left: -12rem;
-    justify-content: center;
-}
-
-.manual-btn {
-    border: 2px solid white;
-    padding: 3px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 0.5s;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 40px;
-}
-
-.manual-btn:hover {
-    background-color: rgba(255, 255, 255, 0.605);
-}
-
-#radio1:checked ~ .first {
-    margin-left: 0;
-}
-
-#radio2:checked ~ .first {
-    margin-left: -25%;
-}
-
-#radio3:checked ~ .first {
-    margin-left: -50%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -75%;
-}
-
-.navigation-auto div {
-    border: 2px solid #d3ad7f;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: .5s;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 300px;
-    margin-top: 200px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.navigation-auto div:not(:last-child) {
-    margin-right: 40px;
-}
-
-#radio1:checked ~.navigation-auto .auto-btn1 {
-    background: #fff;
-}
-
-#radio2checked ~.navigation-auto .auto-btn2 {
-    background: #fff;
-}
-
-#radio3:checked ~.navigation-auto .auto-btn3 {
-    background: #fff;
-}
-#radio4:checked ~.navigation-auto .auto-btn4 {
-    background: #fff;
+iframe {
+    margin: 0 auto;
+    width: 500px;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: none;
 }
 
 .img {
@@ -277,6 +195,15 @@ section#main {
 
     .texto ul li {
         font-size: 1.5rem;
+    }
+
+    /* img */
+    iframe {
+        margin: 0 auto;
+        width: 430px;
+        height: 450px;
+        overflow-x: hidden;
+        overflow-y: none;
     }
 
 

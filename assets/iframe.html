@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .slides {
+    width: 400%;
+    height: 400px;
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 500px;
+    height: 400px;
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    left: -12rem;
+    justify-content: center;
+}
+
+.manual-btn {
+    border: 2px solid white;
+    padding: 3px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover {
+    background-color: rgba(255, 255, 255, 0.605);
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -25%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -75%;
+}
+
+.navigation-auto div {
+    border: 2px solid #d3ad7f;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 300px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navigation-auto div:not(:last-child) {
+    margin-right: 40px;
+}
+
+#radio1:checked ~.navigation-auto .auto-btn1 {
+    background: #fff;
+}
+
+#radio2checked ~.navigation-auto .auto-btn2 {
+    background: #fff;
+}
+
+#radio3:checked ~.navigation-auto .auto-btn3 {
+    background: #fff;
+}
+#radio4:checked ~.navigation-auto .auto-btn4 {
+    background: #fff;
+}
+</style>
+<body>
+    <div class="slider">
+
+        <div class="slides">
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--Fim Radio Buttons-->
+
+          <!--Slide images-->
+            <div class="slide first">
+                <img src="../img/wallpaperflare.com_wallpaper (8).jpg" alt="Imagem 1">
+           </div>
+            <div class="slide">
+                <img src="../img/wallpaperflare.com_wallpaper (10).jpg" alt="Imagem 2">
+           </div>
+            <div class="slide">
+                <img src="../img/wallpaperflare.com_wallpaper (8).jpg" alt="Imagem 3">
+            </div>
+            <br>
+            <div class="slide">
+                <img src="../img/wallpaperflare.com_wallpaper (9).jpg" alt="Imagem 3">
+            </div>
+           <!--Fim Slide images-->
+
+           <!--Navigation auto-->
+            <div classe="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div cLass="auto-btn4"></div>
+            </div>
+
+           </div>
+
+           <div cLass="manual-navigation">
+                <label for="radio1" cLass="manual-btn"></label>
+                <label for="radio2" class="manual-btn"></label>
+                <label for="radio3" class="manual-btn"></label>
+                <label for="radio4" class="manual-btn"></label>
+           </div>
+           
+       </div>
+</body>
+</html>
