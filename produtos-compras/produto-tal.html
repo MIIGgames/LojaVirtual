@@ -47,10 +47,53 @@
     <!-- Main -->
 
     <section id="main">
+
         <div class="container">
-            <div class="img-1">
-                <img class="img" src="../img/wallpaperflare.com_wallpaper (10).jpg" alt="">
-            </div>
+
+            <div class="slider">
+
+                <div class="slides">
+                  <input type="radio" name="radio-btn" id="radio1">
+                  <input type="radio" name="radio-btn" id="radio2">
+                  <input type="radio" name="radio-btn" id="radio3">
+                  <input type="radio" name="radio-btn" id="radio4">
+                  <!--Fim Radio Buttons-->
+
+                  <!--Slide images-->
+                    <div class="slide first">
+                        <img src="../img/wallpaperflare.com_wallpaper (8).jpg" alt="Imagem 1">
+                   </div>
+                    <div class="slide">
+                        <img src="../img/wallpaperflare.com_wallpaper (10).jpg" alt="Imagem 2">
+                   </div>
+                    <div class="slide">
+                        <img src="../img/wallpaperflare.com_wallpaper (8).jpg" alt="Imagem 3">
+                    </div>
+                    <div class="slide">
+                        <img src="../img/wallpaperflare.com_wallpaper (9).jpg" alt="Imagem 3">
+                    </div>
+                   <!--Fim Slide images-->
+
+                   <!--Navigation auto-->
+                    <div classe="navigation-auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                        <div cLass="auto-btn4"></div>
+                    </div>
+
+                   </div>
+
+                   <div cLass="manual-navigation">
+                        <label for="radio1" cLass="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                   </div>
+                   
+               </div>
+             
+            <!-- -->
             <div class="texto">
                 <div class="linha-auto">
                     <h2>Descrição</h2>
@@ -73,8 +116,8 @@
                         <li>Tempo De Fixação: Médio</li>
                     </ul>
                     <!-- -->
-                    <div class="btn">
-                        <a href="#"><button>COMPRAR</button></a>
+                    <div class="butons">
+                        <a href="#" class="btn btn-white btn-animate">Comprar</a>
                     </div>
 
             </div>
@@ -104,6 +147,5 @@
     </section>
 
 </body>
-<!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="../js/carrousel.js"></script>
 </html>
