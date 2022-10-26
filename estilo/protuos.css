@@ -23,83 +23,53 @@ section#main {
     padding: 10px;
 }
 
-.sobre-produto {
-    margin-top: 10px;
-    justify-items: left;
-}
-
-.h2 {
-    display: flex;
-    padding: 10px;
-    font-size: 2.1rem;
-    color: gray;
-}
-
-.h2 .linha {
-    margin: 0px 20px;
-    margin-top: 22px;
-    height: 2px;
-    background: white;
-    width: 350px;
-}
-
-.sobre-produto p {
-    margin-top: 10px;
-    margin-left: 20px;
-    color: white;
-    font-family: "Roboto" sans-serif;
-    font-size: 1.5rem;
-    margin-right: 20px;
-}
-
-.sobre-produto ul {
-    margin: 10px 30px;
-    color: white;
-    font-size: 1.4rem;
-}
-
 .container {
-    margin-top: 100px;
-    background: #13131a;
-    padding: 20px;
-}
-
-.bloco-1 {
-    gap: 10px;
     display: flex;
-}
-
-.bloco-1 .btn-comprar {
-    position: absolute;
-    top: 70%;
-    left: 65%;
-    margin: 20px 20px;
-}
-
-.btn-comprar a {
-    font-size: 1.5rem;
-    color: white;
-}
-
-.btn-comprar a > button {
-    width: 300px;
-    background: #d3ad7f;
+    gap: 5rem;
     padding: 10px;
-    border-radius: 2px;
+    background: #13131a;
+    margin-top: 10rem;
 }
 
-.btn-comprar a > button:hover {
-    color: white;
-    padding: 16px;
+.texto {
     font-size: 1.5rem;
-    opacity: 0.7;
+    color: white;
+}
+
+.texto p {
+    justify-items: left;
+    margin-top: 10px;
+}
+
+.texto ul {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+.texto .btn {
+    margin: 25px 20px;
+    padding: 14px;
+}
+
+.btn button {
+    border-radius: 10px;
+    width: 200px;
+    color: white;
+    font-size: 1.9rem;
+    background: #d3ad7f;
+}
+
+.btn button:hover {
+    cursor: pointer;
+    border: 1px solid black;
 }
 
 .container .img {
     border-radius: 5px;
     width: 400px;
-    height: 400px;
+    height: 450px;
 }
+
 
 /* media queries  */
 @media (max-width:991px){
@@ -116,31 +86,51 @@ section#main {
         padding:2rem;
     }
 
-    .container .img {
-        border-radius: 5px;
-        width: 450px;
-        height: 400px;
-    }
-
     .container {
-        margin-top: 100px;
-        background: #13131a;
-        padding: 10px 10px;
-    }
-
-    .bloco-1 {
-        gap: 10px;
+        gap: 2rem;
+        padding: 10px 20px;
         display: flex;
         flex-direction: column;
+        justify-items: center;
     }
 
-    .bloco-1 .btn-comprar {
-        position: absolute;
-        top: 141%;
-        left: 15%;
-        margin: 20px 20px;
+    .texto {
+        margin-top: 5px;
     }
 
+    .container .img {
+        width: 440px;
+        height: 450px;
+    }
+
+    .container h2 {
+        font-size: 2.5rem;
+    }
+
+    .linha-auto {
+        gap: 10px;
+        display: flex;
+    }
+
+    .linha {
+        width: 300px;
+        margin-top: 14px;
+        height: 1px;
+        background: #fff;
+    }
+
+    .texto .btn {
+        border-radius: 5px;
+        padding: 14px;
+    }
+    
+    .btn button {
+        border-radius: 10px;
+        width: 200px;
+        color: white;
+        font-size: 1.9rem;
+        background: #d3ad7f;
+    }
 
 
 }
